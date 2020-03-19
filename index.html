@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer</title>
+  <link rel="icon" type="image/png" href="./images/favicon.png" />
+  <link rel="stylesheet" href="main.6ce4b89b8f94ff992f54.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="header">
+      <div class="panel header__panel">
+        <a class="panel__logo" href="index.html">NewsAnalyzer</a>
+        <nav class="panel__nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link menu__link_active">Главная</a></li>
+            <li class="menu__item"><a href="about.html" class="menu__link">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__content">
+        <h1 class="header__title">Что в мире творится?</h1>
+        <p class="header__lead">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю</p>
+        <div class="search header__search">
+          <input class="search__input" type="search" autocomplete="off" placeholder="Введите тему новости">
+          <button class="search__button">
+            <span class="search__button-inner">Искать</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="section nothiing-found">
+      <img class="nothiing-found__img" src="./images/nothing.svg" alt="">
+      <h2 class="caption nothiing-found__caption">Ничего не найдено</h2>
+      <p class="nothiing-found__message message">К сожалению, по вашему запросу ничего не найдено</p>
+    </section>
+    <section class="section search-in-progress">
+      <div class="preloader search-in-progress__preloader"></div>
+      <h2 class="message">Идет поиск новостей...</h2>
+    </section>
+    <section class="section section_cards">
+      <div class="section__head">
+        <h2 class="title section__head-title">Результаты поиска</h2>
+        <a href="analytics.html" class="link link_goto">Посмотреть аналитику</a>
+      </div>
+      <div class="cards">
+        <div class="card cards__item">
+          <div class="card__image"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h3 class="card__title caption"><a class="link link_inherit link_no-underline" href="https://example.com">Национальное достояние – парки</a></h3>
+          <p class="card__lead">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <a href="https://example.com" class="card__source">Лента.ру</a>
+        </div>
+        <div class="card cards__item">
+          <div class="card__image"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h3 class="card__title caption"><a class="link link_inherit link_no-underline" href="https://example.com">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</a></h3>
+          <p class="card__lead">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae tempora deleniti ratione reprehenderit enim consequatur quaerat tempore, totam at eligendi minima qui ducimus et neque magni mollitia. Eos, quia dolore?</p>
+          <a href="https://example.com" class="card__source">Риа</a>
+        </div>
+      </div>
+      <button class="cards__more">Показать еще</button>
+    </section>
+    <aside class="section author">
+      <img class="author__img" src="./images/avatar.jpg" alt="Аватар автора">
+      <div class="author__content">
+        <h2 class="title author__title">Об авторе</h2>
+        <p class="paragraph">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
+        <p class="paragraph">Также можно рассказать о процессе обучения в <a href="https://praktikum.yandex.ru/" class="link">Практикуме</a>, чему вы тут научились, и чем можете помочь потенциальным заказчикам</p>
+      </div>
+    </aside>
+
+
+
+    <section class="section section_tech">
+      <h2 class="title section__title">Используемые технологии</h2>
+      <ul class="tech section__tech">
+        <li class="tech__item">
+          <p class="tech__name">HTML</p>
+          <img src="./images/sign-html.svg" alt="" class="tech__sign">
+        </li>
+        <li class="tech__item">
+          <p class="tech__name">CSS</p>
+          <img src="./images/sign-css.svg" alt="" class="tech__sign">
+        </li>
+        <li class="tech__item">
+          <p class="tech__name">Java Script</p>
+          <img src="./images/sign-js.svg" alt="" class="tech__sign">
+        </li>
+        <li class="tech__item">
+          <p class="tech__name">Webpack</p>
+          <img src="./images/sign-webpack.svg" alt="" class="tech__sign">
+        </li>
+      </ul>
+    </section>
+
+    <section class="section results">
+      <h1 class="title results__title">Вы спросили: «Путешествия»</h1>
+      <p class="results__item">Новостей за неделю: <span class="results__val">34 324</span></p>
+      <p class="results__item">Упоминаний в загаловках: <span class="results__val">235</span></p>
+    </section>
+    <section class="section section_chart">
+      <h2 class="title section__title">Аналитика по дням</h2>
+      <div class="chart">
+        <div class="chart__head">
+          <div class="chart__day chart__day_caption">Дата (август)</div>
+          <div class="chart__val chart__val_caption">Кол-во упоминаний</div>
+        </div>
+        <div class="chart__timeline timeline">
+          <div class="timeline__helper">50</div>
+        </div>
+        <div class="chart__item chart__item_first">
+          <div class="chart__day">19, пн</div>
+          <div style="--chart-value: 456; --chart-max-value: 789;" class="chart__val">456</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">20, вт</div>
+          <div style="--chart-value: 123; --chart-max-value: 789;" class="chart__val">123</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">21, ср</div>
+          <div style="--chart-value: 234; --chart-max-value: 789;" class="chart__val">234</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">22, чт</div>
+          <div style="--chart-value: 345; --chart-max-value: 789;" class="chart__val">345</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">23, пт</div>
+          <div style="--chart-value: 789; --chart-max-value: 789;" class="chart__val">789</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">24, сб</div>
+          <div style="--chart-value: 77; --chart-max-value: 789;" class="chart__val">77</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">25, вс</div>
+          <div data-value="3" style="--chart-value: 3; --chart-max-value: 789;" class="chart__val chart__val_small">3</div>
+        </div>
+        <div class="chart__timeline timeline">
+          <div class="timeline__helper">50</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section content">
+      <h1 class="title content__title">Клиентам</h1>
+      <p class="paragraph">Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими технологиями владеет.</p>
+      <p class="paragraph">Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+      <p class="paragraph">Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+      <p class="paragraph">При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.</p>
+      <p class="paragraph">Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+    </section>
+    <footer class="footer">
+      <p class="copyright footer__copyright">© 2020 Supersite</p>
+      <nav class="footer__nav">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="index.html" class="link link_inherit link_no-underline">Главная</a></li>
+          <li class="navigation__item"><a href="about.html" class="link link_inherit link_no-underline">О проекте</a></li>
+          <li class="navigation__item"><a href="https://praktikum.yandex.ru/" class="link link_inherit link_no-underline">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <ul class="socials footer__socials">
+        <li class="socials__item"><a href="https://github.com/alsokolov/" class="socials__link"><img src="./images/social-github.svg" alt="Github" class="socials__img"></a></li>
+        <li class="socials__item"><a href="https://facebook.com/" class="socials__link"><img src="./images/social-fb.svg" alt="Facebook" class="socials__img"></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="main.d1dac7005acacf7251fb.js"></script>
+</body>
+</html>
