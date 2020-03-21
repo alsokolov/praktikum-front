@@ -1,0 +1,18 @@
+@import url(./__avatar/avatar__avatar.css);
+@import url(./__contact/avatar__contact.css);
+@import url(./__date/avatar__date.css);
+@import url(./__content/avatar__content.css);
+@import url(./__info/avatar__info.css);
+
+.post {
+  font: 1.6rem/1.35 'Roboto', Arial, sans-serif;
+  background: #fff;
+  min-height: 288px;
+  padding: 22px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.post:hover {
+  box-shadow: 0px 15px 15px 0px rgba(8, 29, 45, 0.1);;
+}

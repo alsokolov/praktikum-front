@@ -1,0 +1,12 @@
+@import url(./_active/glide__bullet_active.css);
+
+.glide__bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: #D1D2D6;
+  cursor: pointer;
+}

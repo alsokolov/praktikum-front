@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>NewsAnalyzer - Аналитика</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="NewsAnalyzer - сервис для анализа происходящих в мире событий. Статистика за неделю.">
+  <meta name="author" content="Александр Соколов">
+  <link rel="icon" type="image/png" href="<%=require('../../images/favicon.png').default%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
+</head>
+<body>
+  <div class="layout">
+    <header class="header header_secondary">
+      <div class="panel panel_theme_light header__panel">
+        <a class="panel__logo" href="index.html">NewsAnalyzer</a>
+        <nav class="panel__nav">
+          <ul class="menu menu_theme_light">
+            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="about.html" class="menu__link  menu__link_active">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="section results">
+      <h1 class="title results__title">Вы спросили: «Путешествия»</h1>
+      <p class="results__item">Новостей за неделю: <span class="results__val">34 324</span></p>
+      <p class="results__item">Упоминаний в загаловках: <span class="results__val">235</span></p>
+    </section>
+    <section class="section section_chart">
+      <h2 class="title section__title">Аналитика по дням</h2>
+      <div class="chart">
+        <div class="chart__head">
+          <div class="chart__day chart__day_caption">Дата (август)</div>
+          <div class="chart__val chart__val_caption">Кол-во упоминаний</div>
+        </div>
+        <div class="chart__timeline timeline">
+          <div class="timeline__helper">50</div>
+        </div>
+        <div class="chart__item chart__item_first">
+          <div class="chart__day">19, пн</div>
+          <div style="--chart-value: 456; --chart-max-value: 789;" class="chart__val">456</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">20, вт</div>
+          <div style="--chart-value: 123; --chart-max-value: 789;" class="chart__val">123</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">21, ср</div>
+          <div style="--chart-value: 234; --chart-max-value: 789;" class="chart__val">234</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">22, чт</div>
+          <div style="--chart-value: 345; --chart-max-value: 789;" class="chart__val">345</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">23, пт</div>
+          <div style="--chart-value: 789; --chart-max-value: 789;" class="chart__val">789</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">24, сб</div>
+          <div style="--chart-value: 77; --chart-max-value: 789;" class="chart__val">77</div>
+        </div>
+        <div class="chart__item">
+          <div class="chart__day">25, вс</div>
+          <div data-value="3" style="--chart-value: 3; --chart-max-value: 789;" class="chart__val chart__val_small">3</div>
+        </div>
+        <div class="chart__timeline timeline">
+          <div class="timeline__helper">50</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright footer__copyright">© 2020 Supersite</p>
+      <nav class="footer__nav">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="index.html" class="link link_inherit link_no-underline">Главная</a></li>
+          <li class="navigation__item"><a href="about.html" class="link link_inherit link_no-underline">О проекте</a></li>
+          <li class="navigation__item"><a target="_blank" href="https://praktikum.yandex.ru/" class="link link_inherit link_no-underline">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <ul class="socials footer__socials">
+        <li class="socials__item"><a target="_blank" href="https://github.com/alsokolov/" class="socials__link"><img src="<%=require('../../images/social-github.svg').default%>" alt="Github" class="socials__img"></a></li>
+        <li class="socials__item"><a target="_blank" href="https://facebook.com/" class="socials__link"><img src="<%=require('../../images/social-fb.svg').default%>" alt="Facebook" class="socials__img"></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+</body>
+</html>

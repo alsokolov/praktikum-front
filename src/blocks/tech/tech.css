@@ -1,0 +1,17 @@
+@import url(./__item/tech__item.css);
+@import url(./__name/tech__name.css);
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font: 1.6rem/1.35 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .tech {
+    flex-wrap: wrap;
+  }
+}

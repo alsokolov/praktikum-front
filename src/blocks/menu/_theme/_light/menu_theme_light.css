@@ -1,0 +1,7 @@
+.menu_theme_light.menu_theme_light {
+  color: #B6BCBF;
+}
+
+.menu_theme_light .menu__link {
+  --menu-color-active: #000;
+}

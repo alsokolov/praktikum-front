@@ -1,0 +1,32 @@
+@import url(./__helper/timeline__helper.css);
+
+.timeline {
+  position: relative;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 16px;
+  height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}
+
+@media screen and (max-width: 767px) {
+  .timeline {
+    display: none;
+  }
+}
+
+.timeline::before {
+  content: '0';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.timeline::after {
+  content: '100';
+  position: absolute;
+  right: 0;
+  top: 0;
+}

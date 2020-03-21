@@ -1,0 +1,10 @@
+@import url(./__preloader/search-in-progress__preloader.css);
+
+.search-in-progress {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

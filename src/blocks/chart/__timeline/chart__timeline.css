@@ -1,0 +1,11 @@
+.chart__timeline {
+  margin: 16px 0 16px 105px;
+}
+
+.chart__timeline::first-child {
+  margin-top: 0;
+}
+
+.chart__timeline::last-child {
+  margin-bottom: 0;
+}

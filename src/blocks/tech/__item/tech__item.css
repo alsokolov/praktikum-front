@@ -1,0 +1,16 @@
+.tech__item {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .tech__item {
+    flex-basis: 50%;
+    margin-left: 0;
+  }
+}
+
+.tech__item:first-child {
+  margin-left: 0;
+}

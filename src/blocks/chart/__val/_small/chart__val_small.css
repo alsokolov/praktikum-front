@@ -1,0 +1,9 @@
+/* На маленьких значениях выводим цифру сбоку*/
+.chart__val_small.chart__val_small  {
+  color: transparent;
+}
+
+.chart__val_small.chart__val_small::after {
+  content: attr(data-value);
+  color: #1A1B22;
+}

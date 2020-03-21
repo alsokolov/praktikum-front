@@ -1,0 +1,15 @@
+.header__panel {
+  padding: 0 100px;
+}
+
+@media screen and (max-width: 995px) {
+  .header__panel {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__panel {
+    padding: 0 16px;
+  }
+}

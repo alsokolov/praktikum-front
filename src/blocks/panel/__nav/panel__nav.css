@@ -1,0 +1,10 @@
+.panel__nav {
+  display: flex;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 414px) {
+  .panel__nav {
+    margin: auto;
+  }
+}

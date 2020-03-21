@@ -1,0 +1,10 @@
+.results__title {
+  font: normal 2.22em/1.15 'RobotoSlab', Georgia, serif;
+  margin: 0 0 .6em;
+}
+
+@media screen and (max-width: 767px) {
+  .results__title {
+    font-size: 1.67em;
+  }
+}

@@ -1,0 +1,10 @@
+@import url(./__img/nothiing-found__img.css);
+@import url(./__message/nothiing-found__message.css);
+
+.nothiing-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

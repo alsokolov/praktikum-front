@@ -1,0 +1,17 @@
+@import url(./__button/search__button.css);
+@import url(./__button-inner/search__button-inner.css);
+@import url(./__input/search__input.css);
+
+.search {
+  display: flex;
+  font: 1.6rem/1.35 'Roboto', Arial, sans-serif;
+  width: 100%;
+  height: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .search {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}

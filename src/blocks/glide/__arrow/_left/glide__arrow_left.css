@@ -1,0 +1,3 @@
+.glide__arrow_left.glide__arrow_left::before {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,22 @@
+@import url(./_secondary/header_secondary.css);
+@import url(./__content/header__content.css);
+@import url(./__panel/header__panel.css);
+@import url(./__title/header__title.css);
+@import url(./__lead/header__lead.css);
+
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 576px;
+  max-height: 100vh;
+  background: #1A1B22 no-repeat url('../images/header-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+
+@media screen and (max-width: 995px) {
+  .header {
+    max-height: none;
+    min-height: auto;
+  }
+}

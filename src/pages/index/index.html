@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>NewsAnalyzer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="NewsAnalyzer - сервис для анализа происходящих в мире событий">
+  <meta name="author" content="Александр Соколов">
+  <link rel="icon" type="image/png" href="<%=require('../../images/favicon.png').default%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+  <div class="layout">
+    <header class="header">
+      <div class="panel header__panel">
+        <a class="panel__logo" href="index.html">NewsAnalyzer</a>
+        <nav class="panel__nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link menu__link_active">Главная</a></li>
+            <li class="menu__item"><a href="about.html" class="menu__link">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__content">
+        <h1 class="header__title">Что в мире творится?</h1>
+        <p class="header__lead">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю</p>
+        <div class="search header__search">
+          <input class="search__input" type="search" minlength="2" maxlength="255" autocomplete="off" placeholder="Введите тему новости">
+          <button class="search__button">
+            <span class="search__button-inner">Искать</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section nothiing-found">
+      <img class="nothiing-found__img" src="<%=require('../../images/nothing.svg').default%>" alt="">
+      <h2 class="caption nothiing-found__caption">Ничего не найдено</h2>
+      <p class="nothiing-found__message message">К сожалению, по вашему запросу ничего не найдено</p>
+    </section>
+    <section class="section search-in-progress">
+      <div class="preloader search-in-progress__preloader"></div>
+      <h2 class="message">Идет поиск новостей...</h2>
+    </section>
+
+    <section class="section section_cards">
+      <div class="section__head">
+        <h2 class="title section__head-title">Результаты поиска</h2>
+        <a href="analytics.html" class="link link_goto">Посмотреть аналитику</a>
+      </div>
+      <div class="cards">
+        <div class="card cards__item">
+          <div class="card__image"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">Национальное достояние – парки</a></h3>
+          <p class="card__lead">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <a target="_blank" href="https://example.com" class="card__source">Лента.ру</a>
+        </div>
+        <div class="card cards__item">
+          <div class="card__image"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</a></h3>
+          <p class="card__lead">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae tempora deleniti ratione reprehenderit enim consequatur quaerat tempore, totam at eligendi minima qui ducimus et neque magni mollitia. Eos, quia dolore?</p>
+          <a target="_blank" href="https://example.com" class="card__source">Риа</a>
+        </div>
+
+        <div class="card cards__item">
+          <div class="card__image"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</a></h3>
+          <p class="card__lead">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae tempora deleniti ratione reprehenderit enim consequatur quaerat tempore, totam at eligendi minima qui ducimus et neque magni mollitia. Eos, quia dolore?</p>
+          <a target="_blank" href="https://example.com" class="card__source">Риа</a>
+        </div>
+        <div class="card cards__item">
+          <div class="card__image"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</a></h3>
+          <p class="card__lead">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae tempora deleniti ratione reprehenderit enim consequatur quaerat tempore, totam at eligendi minima qui ducimus et neque magni mollitia. Eos, quia dolore?</p>
+          <a href="https://example.com" class="card__source">Риа</a>
+        </div>
+      </div>
+      <button class="cards__more">Показать еще</button>
+    </section>
+
+    <aside class="section author">
+      <img class="author__img" src="<%=require('../../images/avatar.jpg').default%>" alt="Аватар автора">
+      <div class="author__content">
+        <h2 class="title author__title">Об авторе</h2>
+        <p class="paragraph">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
+        <p class="paragraph">Также можно рассказать о процессе обучения в <a target="_blank" href="https://praktikum.yandex.ru/" class="link">Практикуме</a>, чему вы тут научились, и чем можете помочь потенциальным заказчикам</p>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <p class="copyright footer__copyright">© 2020 Supersite</p>
+      <nav class="footer__nav">
+        <ul class="navigation">
+          <li class="navigation__item"><a href="index.html" class="link link_inherit link_no-underline">Главная</a></li>
+          <li class="navigation__item"><a href="about.html" class="link link_inherit link_no-underline">О проекте</a></li>
+          <li class="navigation__item"><a target="_blank" href="https://praktikum.yandex.ru/" class="link link_inherit link_no-underline">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <ul class="socials footer__socials">
+        <li class="socials__item"><a target="_blank" href="https://github.com/alsokolov/" class="socials__link"><img src="<%=require('../../images/social-github.svg').default%>" alt="Github" class="socials__img"></a></li>
+        <li class="socials__item"><a target="_blank" href="https://facebook.com/" class="socials__link"><img src="<%=require('../../images/social-fb.svg').default%>" alt="Facebook" class="socials__img"></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

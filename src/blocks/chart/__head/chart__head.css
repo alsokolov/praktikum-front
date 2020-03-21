@@ -1,0 +1,8 @@
+.chart__head {
+  display: flex;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+  border-bottom: 1px solid #1A1B22;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,9 @@
+.author__title {
+  margin: 1.3em 0 .6em;
+}
+
+@media screen and (max-width: 995px) {
+  .author__title {
+    margin-top: 0;
+  }
+}

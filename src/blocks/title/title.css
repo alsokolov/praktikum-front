@@ -1,0 +1,11 @@
+.title {
+  font: normal 4rem/1.15 'RobotoSlab', Georgia, serif;
+  color: #1A1B22;
+  margin: 0;
+}
+
+@media screen and (max-width: 995px) {
+  .title {
+    font-size: 3rem;
+  }
+}

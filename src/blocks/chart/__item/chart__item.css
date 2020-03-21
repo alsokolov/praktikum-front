@@ -1,0 +1,7 @@
+@import url(./_first/chart__item_first.css);
+
+.chart__item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 56px;
+}

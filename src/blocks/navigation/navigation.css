@@ -1,0 +1,15 @@
+@import url(./__item/navigation__item.css);
+
+.navigation {
+  display: flex;
+  font: 1.8rem/1.35 'SourceSans', Arial, sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,7 @@
+.paragraph {
+  margin: .8em 0 0;
+}
+
+.paragraph:first-child {
+  margin-top: 0;
+}

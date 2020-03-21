@@ -1,0 +1,23 @@
+.section_tech {
+  padding-bottom: 100px;
+  display: flex;
+}
+
+@media screen and (max-width: 995px) {
+  .section_tech {
+      flex-direction: column;
+  }
+}
+
+.section_tech .section__title {
+  max-width: 345px;
+  margin-right: auto;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 995px) {
+  .section_tech .section__title {
+      max-width: none;
+      margin: 0 0 .7em;
+  }
+}

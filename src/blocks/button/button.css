@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1A1B22;
+  box-sizing: border-box;
+  border-radius: 80px;
+  font: 500 1.8rem/1.35 'Roboto', Arial, sans-serif;
+  min-height: 56px;
+  min-width: 288px;
+  transition: background-color .5s ease-out;
+}
+@media screen and (max-width: 767px) {
+  .button {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+.button:hover {
+  background: rgba(26, 27, 34, .1);
+}
+
+.button:focus {
+  outline: none;
+  background: rgba(26, 27, 34, .1);
+}

@@ -1,0 +1,30 @@
+.cards__more {
+  display: block;
+  min-width: 288px;
+  height: 64px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 80px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0 .5em;
+  box-sizing: border-box;
+  font: 500 1.125em/1.35 'Roboto', Arial, sans-serif;
+  transition: background-color .5s ease-out;
+}
+
+@media screen and (max-width: 767px) {
+  .cards__more {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+.cards__more:hover {
+  background: rgba(26, 27, 34, .1);
+}
+
+.cards__more:focus {
+  outline: none;
+  background: rgba(26, 27, 34, .1);
+}

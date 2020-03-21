@@ -1,0 +1,11 @@
+.header__title {
+  font: normal 6rem/1.05 'RobotoSlab', Georgia, serif;
+  margin: 0 0 32px;
+}
+
+@media screen and (max-width: 995px) {
+  .header__title {
+    font-size: 3.6rem;
+    line-height: 1.1;
+  }
+}
