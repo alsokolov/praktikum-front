@@ -5,18 +5,20 @@
 .footer {
   display: flex;
   align-items: center;
-  padding: 0 100px;
+  padding: 1em 100px;
+  min-height: 80px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 995px) {
   .footer {
-    padding: 0 40px;
+    padding: 1em 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer {
-    padding: 0 16px;
+    padding: 1em 16px;
     flex-wrap: wrap;
   }
 }

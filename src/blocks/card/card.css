@@ -13,6 +13,7 @@
   overflow: hidden;
   font: 1.6rem/1.35 'Roboto', Arial, sans-serif;
   padding: 292px 24px 24px; /* height + padding = 272 + 20 */
+  background: #fff;
   box-sizing: border-box;
 }
 @media screen and (max-width: 995px) {

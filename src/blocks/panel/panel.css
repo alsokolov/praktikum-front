@@ -1,5 +1,6 @@
 @import url(./__logo/panel__logo.css);
 @import url(./__nav/panel__nav.css);
+@import url(./_theme/panel_theme.css);
 
 .panel {
   display: flex;
@@ -12,11 +13,5 @@
 @media screen and (max-width: 767px) {
   .panel {
     min-height: 56px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .panel {
-    flex-direction: column;
   }
 }

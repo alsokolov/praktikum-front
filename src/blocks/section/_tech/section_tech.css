@@ -1,6 +1,7 @@
 .section_tech {
-  padding-bottom: 100px;
   display: flex;
+  padding-bottom: 100px;
+  background: #F5F6F7;
 }
 
 @media screen and (max-width: 995px) {

@@ -11,6 +11,7 @@
   padding: 22px;
   box-sizing: border-box;
   cursor: pointer;
+  border-radius: 16px;
 }
 
 .post:hover {
