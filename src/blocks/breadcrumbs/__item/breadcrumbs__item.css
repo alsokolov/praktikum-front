@@ -1,0 +1,12 @@
+@import url(./_current/breadcrumbs__item_current.css);
+
+.breadcrumbs__item {
+  display: inline;
+  word-spacing: normal;
+}
+
+.breadcrumbs__item::after {
+  content: '/';
+  color: #B6BCBF;
+  margin: 0 .2em;
+}

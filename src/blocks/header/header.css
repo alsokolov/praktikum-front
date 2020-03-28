@@ -3,6 +3,7 @@
 @import url(./__panel/header__panel.css);
 @import url(./__title/header__title.css);
 @import url(./__lead/header__lead.css);
+@import url(./__breadcrumbs/header__breadcrumbs.css);
 
 .header {
   display: flex;
