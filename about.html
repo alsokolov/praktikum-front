@@ -8,7 +8,7 @@
   <meta name="description" content="NewsAnalyzer - сервис для анализа происходящих в мире событий. О проекте">
   <meta name="author" content="Александр Соколов">
   <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="css/about.a34188fb25bfe5746206.css">
+  <link rel="stylesheet" href="css/about.f4224a2024456c059dae.css">
 </head>
 <body>
   <div class="layout">
@@ -55,7 +55,11 @@
     </section>
 
     <aside class="section author">
-      <img class="author__img" src="./images/avatar.jpg" alt="Аватар автора">
+      <picture class="author__picture">
+        <source srcset="./images/avatar-m.jpg" media="(max-width: 767px)">
+        <source srcset="./images/avatar-t.jpg" media="(max-width: 995px)">
+        <img class="author__img" src="./images/avatar.jpg" alt="Аватар автора">
+      </picture>
       <div class="author__content">
         <h2 class="title author__title">Об авторе</h2>
         <p class="paragraph">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
