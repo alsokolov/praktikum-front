@@ -86,7 +86,11 @@
     </section>
 
     <aside class="section author">
-      <img class="author__img" src="<%=require('../../images/avatar.jpg').default%>" alt="Аватар автора">
+      <picture class="author__picture">
+        <source srcset="<%=require('../../images/avatar-m.jpg').default%>" media="(max-width: 767px)">
+        <source srcset="<%=require('../../images/avatar-t.jpg').default%>" media="(max-width: 995px)">
+        <img class="author__img" src="<%=require('../../images/avatar.jpg').default%>" alt="Аватар автора">
+      </picture>
       <div class="author__content">
         <h2 class="title author__title">Об авторе</h2>
         <p class="paragraph">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
