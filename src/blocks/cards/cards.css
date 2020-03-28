@@ -1,5 +1,4 @@
 @import url(./__item/cards__item.css);
-@import url(./__more/cards__more.css);
 
 .cards {
   display: flex;
