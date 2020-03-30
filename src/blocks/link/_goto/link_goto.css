@@ -1,0 +1,14 @@
+.link.link_goto {
+  margin-right: 24px;
+  border-bottom-color: transparent;
+}
+
+.link_goto::after {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  margin-right: -24px;
+  background: no-repeat center url(../images/link-arrow.svg);
+}

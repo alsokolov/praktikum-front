@@ -1,0 +1,10 @@
+.card__lead {
+  max-height: 110px;
+  margin: 0;
+  overflow: hidden;
+  /* Добавляем многострочный elipsis*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  margin: 0;
+}

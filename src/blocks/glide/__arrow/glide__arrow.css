@@ -1,0 +1,35 @@
+@import url(./_left/glide__arrow_left.css);
+
+.glide__arrow {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  margin: 0 24px;
+  border: none;
+  background: #1A1B22;
+  box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+  border-radius: 50%;
+  color: transparent;
+  padding: 0;
+  opacity: .85;
+  transition: opacity .5s ease-out;
+  cursor: pointer;
+}
+
+.glide__arrow:hover {
+  opacity: 1;
+}
+
+.glide__arrow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  margin-left: -4px;
+  height: 14px;
+  margin-top: -7px;
+  background: no-repeat center url(../images/slider-arrow.svg);
+  background-size: cover;
+}

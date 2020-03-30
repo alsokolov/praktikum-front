@@ -1,0 +1,15 @@
+@import url(./_active/menu__link_active.css);
+
+.menu__link {
+  --menu-color-active: #fff;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  transition: color .3s ease-out;
+}
+
+.menu__link:hover {
+  color: var(--menu-color-active);
+}

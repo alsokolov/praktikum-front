@@ -1,0 +1,17 @@
+.header__lead {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 3.5em;
+}
+
+@media screen and (max-width: 995px) {
+  .header__lead {
+    margin: 0 0 1.5em;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .header__lead {
+    margin: 3em 0 1.5em;
+  }
+}

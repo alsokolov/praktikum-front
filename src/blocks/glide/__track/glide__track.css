@@ -1,0 +1,33 @@
+.glide__track {
+  position: relative;
+  z-index: 1;
+}
+
+.glide__track::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 88px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+}
+
+.glide__track::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 88px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+}
+
+@media screen and (max-width: 995px) {
+  .glide__track::before,
+  .glide__track::after {
+    content: none;
+  }
+}

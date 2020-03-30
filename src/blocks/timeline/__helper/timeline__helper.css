@@ -1,0 +1,22 @@
+
+.timeline__helper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.timeline__helper::before {
+  content: '25';
+  position: absolute;
+  left: 25%;
+  top: 0;
+}
+
+.timeline__helper::after {
+  content: '75';
+  position: absolute;
+  left: 75%;
+  top: 0;
+}

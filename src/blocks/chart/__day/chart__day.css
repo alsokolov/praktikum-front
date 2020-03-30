@@ -1,0 +1,8 @@
+@import url(./_caption/chart__day_caption.css);
+
+.chart__day {
+  width: 100px;
+  flex: 0 0 100px;
+  padding-right: 5px;
+  font-size: 1.5em;
+}

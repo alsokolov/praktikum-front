@@ -1,0 +1,15 @@
+.glide__arrows {
+  position: absolute;
+  top: 50%;
+  height: 40px;
+  margin-top: -20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 995px) {
+  .glide__arrows {
+    display: none;
+  }
+}

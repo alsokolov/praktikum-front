@@ -1,0 +1,14 @@
+.menu__item {
+  position: relative;
+  margin-left: 3.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__item {
+    margin-left: 1rem;
+  }
+}
+
+.menu__item:first-child {
+  margin-left: 0;
+}

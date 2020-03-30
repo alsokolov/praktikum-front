@@ -1,0 +1,10 @@
+.caption {
+  margin: 0;
+  font: normal 1.625em/1.15 'RobotoSlab', Georgia, serif;
+}
+
+@media screen and (max-width: 995px) {
+  .caption {
+    font-size: 1.125em;
+  }
+}

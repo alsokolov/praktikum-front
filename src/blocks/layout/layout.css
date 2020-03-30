@@ -1,0 +1,8 @@
+.layout {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font: 1.6rem/1.35 'Roboto', Arial, sans-serif;
+  color: #1A1B22;
+  background-color: #fff;
+}

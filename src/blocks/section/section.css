@@ -1,0 +1,28 @@
+@import url(./__head/section__head.css);
+@import url(./__add/section__add.css);
+@import url(./__tech/section__tech.css);
+@import url(./__glide/section__glide.css);
+@import url(./__head-title/section__head-title.css);
+@import url(./_tech/section_tech.css);
+@import url(./_intro/section_intro.css);
+@import url(./_chart/section_chart.css);
+@import url(./_cards/section_cards.css);
+@import url(./_glide/section_glide.css);
+@import url(./_hidden/section_hidden.css);
+
+.section {
+  padding: 80px 100px;
+  font: 1.8rem/1.35 'Roboto', Arial, sans-serif;
+}
+
+@media screen and (max-width: 995px) {
+  .section {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 32px 16px;
+  }
+}

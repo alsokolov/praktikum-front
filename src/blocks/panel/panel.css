@@ -1,0 +1,17 @@
+@import url(./__logo/panel__logo.css);
+@import url(./__nav/panel__nav.css);
+@import url(./_theme/panel_theme.css);
+
+.panel {
+  display: flex;
+  min-height: 80px;
+  background: rgba(196, 196, 196, 0.01);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .panel {
+    min-height: 56px;
+  }
+}

@@ -1,0 +1,9 @@
+.socials__link {
+  text-decoration: none;
+  opacity: .85;
+  transition: opacity .3s ease-out;
+}
+
+.socials__link:hover {
+  opacity: 1;
+}

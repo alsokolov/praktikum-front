@@ -1,0 +1,14 @@
+@import url(./_goto/link_goto.css);
+@import url(./_inherit/link_inherit.css);
+@import url(./_no-underline/link_no-underline.css);
+
+.link {
+  color: #1A1B22;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26,27,34,.3);
+  transition: border-color .3s ease-out, color .3s ease-out;
+}
+
+.link:hover {
+  border-bottom-color: currentColor;
+}

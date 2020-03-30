@@ -1,0 +1,15 @@
+.panel__logo {
+  display: flex;
+  align-items: center;
+  font: bold 2rem 'RobotoSlab', Georgia, serif;
+  line-height: inherit;
+  margin: 0 2rem 0 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .panel__logo {
+    font-size: 1.6rem;
+  }
+}

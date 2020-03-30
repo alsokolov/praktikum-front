@@ -1,0 +1,20 @@
+.card__source {
+  display: block;
+  font: bold 1em/1.25 'RobotoSlab', Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #B6BCBF;
+  margin-top: auto;
+  padding: 1.125em 0 0;
+  text-decoration: none;
+  transition: color .3s ease-out;
+  margin: 0;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card__source:hover {
+  color: #1A1B22;
+}

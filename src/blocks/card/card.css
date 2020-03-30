@@ -1,0 +1,28 @@
+@import url(./__date/card__date.css);
+@import url(./__image/card__image.css);
+@import url(./__lead/card__lead.css);
+@import url(./__source/card__source.css);
+@import url(./__title/card__title.css);
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  font: 1.6rem/1.35 'Roboto', Arial, sans-serif;
+  padding: 292px 24px 24px; /* height + padding = 272 + 20 */
+  background: #fff;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 995px) {
+  .card {
+    padding: 166px 16px 16px; /* height + padding = 150 + 16 */
+  }
+}
+@media screen and (max-width: 767px) {
+  .card {
+    padding: 212px 16px 16px; /* height + padding = 196 + 16 */
+  }
+}

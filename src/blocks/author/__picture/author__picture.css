@@ -1,0 +1,23 @@
+.author__picture {
+  display: block;
+  max-width: 464px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  flex: 1 1 auto;
+  margin-right: 5.6rem;
+}
+
+@media screen and (max-width: 995px) {
+  .author__picture {
+    max-width: 232px;
+    margin-right: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .author__picture {
+    max-width: 272px;
+    margin: 0 auto 1.3em;
+  }
+}

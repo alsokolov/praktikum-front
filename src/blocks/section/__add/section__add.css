@@ -1,0 +1,30 @@
+.section__add {
+  display: block;
+  min-width: 288px;
+  height: 64px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 80px;
+  cursor: pointer;
+  margin: 1.5em auto 0;
+  padding: 0 .5em;
+  box-sizing: border-box;
+  font: 500 1.125em/1.35 'Roboto', Arial, sans-serif;
+  transition: background-color .5s ease-out;
+}
+
+@media screen and (max-width: 767px) {
+  .section__add {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+.section__add:hover {
+  background: rgba(26, 27, 34, .1);
+}
+
+.section__add:focus {
+  outline: none;
+  background: rgba(26, 27, 34, .1);
+}
