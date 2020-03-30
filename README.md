@@ -4,9 +4,9 @@
 
 Используемые библиотеки и API:
 
-GlideJs - https://glidejs.com
-NewsApi API — https://newsapi.org
-Github API - https://developer.github.com/v3/
+* GlideJs - https://glidejs.com
+* NewsApi API — https://newsapi.org
+* Github API - https://developer.github.com/v3/
 
 ## Краткая иструкция по установкe
 
