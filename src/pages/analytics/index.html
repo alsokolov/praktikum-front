@@ -28,9 +28,9 @@
       </ul>
     </header>
     <section class="section results">
-      <h1 class="title results__title">Вы спросили: «Путешествия»</h1>
-      <p class="results__item">Новостей за неделю: <span class="results__val">34 324</span></p>
-      <p class="results__item">Упоминаний в загаловках: <span class="results__val">235</span></p>
+      <h1 class="title results__title">Вы спросили: «<span class="results__theme"></span>»</h1>
+      <p class="results__item">Новостей за неделю: <span class="results__val results__val_total"></span></p>
+      <p class="results__item">Упоминаний в загаловках: <span class="results__val results__val_in-headers"></span></p>
     </section>
     <section class="section section_chart">
       <h2 class="title section__title">Аналитика по дням</h2>
@@ -42,35 +42,8 @@
         <div class="chart__timeline timeline">
           <div class="timeline__helper">50</div>
         </div>
-        <div class="chart__item chart__item_first">
-          <div class="chart__day">19, пн</div>
-          <div style="--chart-value: 456; --chart-max-value: 789;" class="chart__val">456</div>
-        </div>
-        <div class="chart__item">
-          <div class="chart__day">20, вт</div>
-          <div style="--chart-value: 123; --chart-max-value: 789;" class="chart__val">123</div>
-        </div>
-        <div class="chart__item">
-          <div class="chart__day">21, ср</div>
-          <div style="--chart-value: 234; --chart-max-value: 789;" class="chart__val">234</div>
-        </div>
-        <div class="chart__item">
-          <div class="chart__day">22, чт</div>
-          <div style="--chart-value: 345; --chart-max-value: 789;" class="chart__val">345</div>
-        </div>
-        <div class="chart__item">
-          <div class="chart__day">23, пт</div>
-          <div style="--chart-value: 789; --chart-max-value: 789;" class="chart__val">789</div>
-        </div>
-        <div class="chart__item">
-          <div class="chart__day">24, сб</div>
-          <div style="--chart-value: 77; --chart-max-value: 789;" class="chart__val">77</div>
-        </div>
-        <div class="chart__item">
-          <div class="chart__day">25, вс</div>
-          <div data-value="3" style="--chart-value: 3; --chart-max-value: 789;" class="chart__val chart__val_small">3</div>
-        </div>
-        <div class="chart__timeline timeline">
+
+        <div class="chart__timeline timeline timeline_last">
           <div class="timeline__helper">50</div>
         </div>
       </div>
