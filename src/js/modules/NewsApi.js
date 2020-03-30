@@ -7,7 +7,8 @@ export class NewsApi {
     const startDate = Date.now() - DELTA_DATE;
     this.endISODate = new Date(endDate).toISOString()
     this.startISODate = new Date(startDate).toISOString();
-    return fetch(`http://newsapi.org/v2/everything?` +
+    const path = NODE_ENV === 'development' ? 'http://newsapi.org/v2/everything?' : 'https://newsapi.org/v2/everything?';
+    return fetch(`${path}` +
       `apiKey=${NEWS_API_KEY}` +
       `&from=${this.startISODate}` +
       `&to=${this.endISODate}` +
