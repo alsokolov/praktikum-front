@@ -36,52 +36,22 @@
       </div>
     </header>
 
-    <section class="section nothiing-found">
+    <section class="section nothiing-found section_hidden">
       <img class="nothiing-found__img" src="<%=require('../../images/nothing.svg').default%>" alt="">
       <h2 class="caption nothiing-found__caption">Ничего не найдено</h2>
       <p class="nothiing-found__message message">К сожалению, по вашему запросу ничего не найдено</p>
     </section>
-    <section class="section search-in-progress">
+    <section class="section search-in-progress section_hidden">
       <div class="preloader search-in-progress__preloader"></div>
       <h2 class="message">Идет поиск новостей...</h2>
     </section>
 
-    <section class="section section_cards">
+    <section class="section section_cards section_hidden">
       <div class="section__head">
         <h2 class="title section__head-title">Результаты поиска</h2>
         <a href="analytics.html" class="link link_goto">Посмотреть аналитику</a>
       </div>
-      <div class="cards">
-        <div class="card cards__item">
-          <div class="card__image"></div>
-          <p class="card__date">2 августа, 2019</p>
-          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">Национальное достояние – парки</a></h3>
-          <p class="card__lead">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <a target="_blank" href="https://example.com" class="card__source">Лента.ру</a>
-        </div>
-        <div class="card cards__item">
-          <div class="card__image"></div>
-          <p class="card__date">2 августа, 2019</p>
-          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</a></h3>
-          <p class="card__lead">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae tempora deleniti ratione reprehenderit enim consequatur quaerat tempore, totam at eligendi minima qui ducimus et neque magni mollitia. Eos, quia dolore?</p>
-          <a target="_blank" href="https://example.com" class="card__source">Риа</a>
-        </div>
-
-        <div class="card cards__item">
-          <div class="card__image"></div>
-          <p class="card__date">2 августа, 2019</p>
-          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</a></h3>
-          <p class="card__lead">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae tempora deleniti ratione reprehenderit enim consequatur quaerat tempore, totam at eligendi minima qui ducimus et neque magni mollitia. Eos, quia dolore?</p>
-          <a target="_blank" href="https://example.com" class="card__source">Риа</a>
-        </div>
-        <div class="card cards__item">
-          <div class="card__image"></div>
-          <p class="card__date">2 августа, 2019</p>
-          <h3 class="card__title caption"><a target="_blank" class="link link_inherit link_no-underline" href="https://example.com">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</a></h3>
-          <p class="card__lead">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae tempora deleniti ratione reprehenderit enim consequatur quaerat tempore, totam at eligendi minima qui ducimus et neque magni mollitia. Eos, quia dolore?</p>
-          <a href="https://example.com" class="card__source">Риа</a>
-        </div>
-      </div>
+      <div class="cards"></div>
       <button class="section__add">Показать еще</button>
     </section>
 

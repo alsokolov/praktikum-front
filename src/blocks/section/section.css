@@ -8,6 +8,7 @@
 @import url(./_chart/section_chart.css);
 @import url(./_cards/section_cards.css);
 @import url(./_glide/section_glide.css);
+@import url(./_hidden/section_hidden.css);
 
 .section {
   padding: 80px 100px;
